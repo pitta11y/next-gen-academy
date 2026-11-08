@@ -11,6 +11,25 @@
 @media(max-width:850px){.navlinks{display:none;position:absolute;top:82px;left:0;right:0;background:#081426;padding:22px;flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--line)}.navlinks.show{display:flex}.menu{display:block}.nav-cta{display:none}.hero-art{opacity:.22;right:-90px}.hero-content{max-width:650px}.cards,.pricing{grid-template-columns:1fr 1fr}.split{gap:35px}.contact-grid{gap:30px}}
 @media(max-width:600px){.container{width:min(100% - 32px,1160px)}.topbar .container{justify-content:center}.topbar .container span:last-child{display:none}nav{height:72px}.navlinks{top:72px}.hero{min-height:620px}.hero-content{padding:80px 0}.hero-art{right:-170px}.hero p{font-size:15px}.section{padding:72px 0}.section-head{display:block}.section-head p{margin-top:18px}.cards,.pricing,.split,.contact-grid{grid-template-columns:1fr}.price-card.featured{transform:none}.visual-panel{min-height:300px}.stat-row{gap:8px}.stat b{font-size:24px}.benefits{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.footer-top,.copyright{flex-direction:column}.footer-links{flex-wrap:wrap}.hero-note{margin-top:38px}}
 
+
+/* Ingyenes kurzus és kedvezménykártyák */
+.free-course{background:linear-gradient(145deg,#fff 0%,#f2edff 100%);color:#21183a;border:1px solid rgba(118,82,214,.42);box-shadow:0 14px 34px rgba(90,61,160,.10)}
+.free-course p{color:#625a75}
+.free-course .course-meta{border-top:1px solid rgba(118,82,214,.18);color:#51466d}
+.free-course .course-meta b{color:#5c35bd;font-size:20px}
+.free-course .course-icon{background:#eee7ff;border-color:rgba(118,82,214,.25);color:#663bc7}
+.free-course .tag{color:#663bc7}
+.free-course-label{align-self:flex-start;margin-bottom:12px;padding:5px 10px;border-radius:999px;background:#6b3cc6;color:#fff;font-size:9px;font-weight:800;letter-spacing:.14em}
+.offer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}
+.offer-card{background:#fff;border:1px solid rgba(118,82,214,.18);border-radius:16px;padding:24px;box-shadow:0 10px 28px rgba(49,35,92,.06)}
+.offer-card.featured-offer{border:2px solid #7652d6;background:linear-gradient(145deg,#fff,#f5f0ff)}
+.offer-card .offer-kicker{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:#7652d6;font-weight:800}
+.offer-card h3{font:700 21px/1.25 Inter,ui-sans-serif,system-ui,sans-serif;color:#21183a;margin:10px 0}
+.offer-value{font-size:32px;line-height:1.1;font-weight:800;letter-spacing:-.04em;color:#6338c0;margin:12px 0}
+.offer-card p{font-size:13px;color:#625a75;margin:0;line-height:1.65}
+.offer-terms{font-size:11px;color:#777087;margin-top:18px;line-height:1.6}
+@media(max-width:760px){.offer-grid{grid-template-columns:1fr}}
+
 /* Modern white + purple visual refresh */
 :root{
  --navy:#f8f7ff;--navy2:#f0edff;--panel:#ffffff;--gold:#7652d6;--gold2:#9b7bf0;
@@ -306,7 +325,7 @@ h1{font-family:Inter,ui-sans-serif,system-ui,sans-serif;font-size:clamp(43px,5.5
 <section class="section section-dark" id="courses"><div class="container">
 <div class="section-head"><div><div class="eyebrow">Tanulj a saját tempódban</div><h2>Válaszd ki a következő<br><span class="gold">lépésedet.</span></h2></div><p>Gyakorlatorientált tananyagok, közérthető magyarázatok és olyan készségek, amelyeket a mindennapokban is használhatsz.</p></div>
 <div class="cards">
-<article class="course-card"><div class="course-icon">◈</div><div class="tag">Kezdő szint · 4 hét</div><h3>Pénzügyi alapok</h3><p>Ismerd meg a költségvetés, a megtakarítás és a tudatos pénzkezelés alapjait.</p><div class="course-meta"><span>Online · Saját tempó</span><b>29 900 Ft</b></div></article>
+<article class="course-card free-course"><div class="free-course-label">INGYENES TANFOLYAM</div><div class="course-icon">◈</div><div class="tag">Kezdő szint · Bevezető kurzus</div><h3>Pénzügyi alapok</h3><p>Próbáld ki az akadémia szemléletét kötelezettségek nélkül! Ismerd meg a bevételek és kiadások kezelését, a költségvetés-készítést, a megtakarítás alapjait és a tudatos pénzügyi döntéseket.</p><div class="course-meta"><span>Online · Saját tempó</span><b>0 Ft</b></div></article>
 <article class="course-card"><div class="course-icon">⌁</div><div class="tag">Középhaladó · 6 hét</div><h3>Befektetési iránytű</h3><p>Értsd meg a befektetések világát, a kockázat és hozam kapcsolatát, valamint a diverzifikációt.</p><div class="course-meta"><span>Online · Mentorált</span><b>49 900 Ft</b></div></article>
 <article class="course-card"><div class="course-icon">↗</div><div class="tag">Haladó · 5 hét</div><h3>Tőzsde érthetően</h3><p>Ismerkedj meg a részvénypiacok működésével és a hosszú távú szemlélet alapjaival.</p><div class="course-meta"><span>Online · Projektalapú</span><b>59 900 Ft</b></div></article>
 <article class="course-card"><div class="course-icon">▤</div><div class="tag">Kezdő szint · 3 hét</div><h3>Vállalkozói pénzügyek</h3><p>Árazás, cash flow, költségtervezés és pénzügyi döntések vállalkozóknak.</p><div class="course-meta"><span>Online · Gyakorlati</span><b>39 900 Ft</b></div></article>
@@ -344,10 +363,34 @@ h1{font-family:Inter,ui-sans-serif,system-ui,sans-serif;font-size:clamp(43px,5.5
 <div class="price-card"><h3>Start</h3><p class="muted">Az első lépésekhez.</p><div class="price">19 900 Ft <small>/ alkalomtól</small></div><ul><li>Hozzáférés egy alapképzéshez</li><li>Letölthető munkafüzet</li><li>Saját tempójú tanulás</li><li>Alap tudásellenőrző</li></ul><a href="#contact" class="btn btn-outline">Ezt választom</a></div>
 <div class="price-card featured"><div class="ribbon">Legnépszerűbb</div><h3>Plus</h3><p style="color:#aab7c8">Több tudás, több támogatás.</p><div class="price gold">49 900 Ft <small>/ csomag</small></div><ul><li>Hozzáférés három képzéshez</li><li>Letölthető munkafüzetek</li><li>Mentori konzultáció</li><li>Haladási útmutató</li></ul><a href="#contact" class="btn">Ezt választom</a></div>
 <div class="price-card"><h3>Pro</h3><p class="muted">Komplex fejlődéshez.</p><div class="price">89 900 Ft <small>/ csomag</small></div><ul><li>Hozzáférés minden képzéshez</li><li>Prémium tananyagok</li><li>Két mentori konzultáció</li><li>Komplex tudásellenőrző</li></ul><a href="#contact" class="btn btn-outline">Ezt választom</a></div>
-</div><p class="disclaimer" style="color:#718096">A feltüntetett árak és csomagok a bemutató weboldal fiktív, tájékoztató jellegű elemei.</p></div></section>
+</div>
+<div class="offer-grid" id="offers">
+  <article class="offer-card">
+    <div class="offer-kicker">Páros ajánlat</div>
+    <h3>Válassz 2 tanfolyamot</h3>
+    <div class="offer-value">−15%</div>
+    <p>Két különálló, fizetős tanfolyam együttes vásárlásakor 15% kedvezményt adunk a tanfolyamok árából.</p>
+  </article>
+  <article class="offer-card featured-offer">
+    <div class="offer-kicker">Legjobb csomagajánlat</div>
+    <h3>Válassz 3 tanfolyamot</h3>
+    <div class="offer-value">3 = 2</div>
+    <p>Három különálló, fizetős tanfolyam együttes vásárlásakor a legolcsóbb tanfolyam árát elengedjük.</p>
+  </article>
+  <article class="offer-card">
+    <div class="offer-kicker">Első fizetős kurzus</div>
+    <h3>Folytasd az ingyenes alapok után</h3>
+    <div class="offer-value">−10%</div>
+    <p>A Pénzügyi alapok ingyenes tanfolyam elvégzése után 10% kedvezményt kapsz az első fizetős tanfolyamodból.</p>
+  </article>
+</div>
+<p class="offer-terms">A kedvezmények külön-külön vehetők igénybe, egymással nem vonhatók össze, és az egyedi tanfolyamok árára érvényesek; a meglévő Start, Plus és Pro csomagárakra nem. A háromtanfolyamos ajánlatnál a legalacsonyabb árú tanfolyam ingyenes.</p>
+<p class="disclaimer" style="color:#718096">A feltüntetett árak és csomagok a bemutató weboldal fiktív, tájékoztató jellegű elemei.</p></div></section>
 
 <section class="section section-dark" id="faq"><div class="container"><div class="section-head"><div><div class="eyebrow">Jó kérdések, tiszta válaszok</div><h2>Gyakran ismételt<br><span class="gold">kérdések.</span></h2></div></div><div class="faq">
 <div class="faq-item"><button class="faq-q">Kell előzetes pénzügyi tudás a képzésekhez? <span class="plus">+</span></button><div class="faq-a">Nem. Több képzésünk kifejezetten kezdőknek szól, és lépésről lépésre építi fel az alapokat. Az egyes kurzusoknál külön jelezzük az ajánlott tudásszintet.</div></div>
+<div class="faq-item"><button class="faq-q">Tényleg ingyenes a Pénzügyi alapok tanfolyam? <span class="plus">+</span></button><div class="faq-a">Igen. A Pénzügyi alapok bevezető tanfolyam díjmentes, így kockázat és fizetési kötelezettség nélkül kipróbálhatod az akadémia oktatási szemléletét.</div></div>
+<div class="faq-item"><button class="faq-q">Hogyan működnek a tanfolyami kedvezmények? <span class="plus">+</span></button><div class="faq-a">Két különálló fizetős tanfolyam együttes választásakor 15% kedvezményt adunk. Három tanfolyam esetén a legolcsóbb ingyenes. Az ingyenes Pénzügyi alapok kurzus elvégzése után az első fizetős tanfolyam 10% kedvezménnyel vehető igénybe. A kedvezmények nem vonhatók össze, és a csomagárakra nem érvényesek.</div></div>
 <div class="faq-item"><button class="faq-q">Mennyi ideig férek hozzá a tananyagokhoz? <span class="plus">+</span></button><div class="faq-a">A hozzáférés időtartamát minden képzés leírása tartalmazza. A demóban a hozzáférési feltételek szemléltető jellegűek.</div></div>
 <div class="faq-item"><button class="faq-q">Kapok tanúsítványt a képzés végén? <span class="plus">+</span></button><div class="faq-a">A képzési feltételektől függően részvételi igazolás vagy tanúsítvány adható. A konkrét feltételeket a képzés adatlapján tüntetjük fel.</div></div>
 <div class="faq-item"><button class="faq-q">A képzések konkrét befektetési tanácsot adnak? <span class="plus">+</span></button><div class="faq-a">Nem. A tananyagok általános pénzügyi ismereteket és szemléletet adnak, nem minősülnek személyre szabott befektetési, jogi vagy adótanácsadásnak.</div></div>
@@ -358,7 +401,7 @@ h1{font-family:Inter,ui-sans-serif,system-ui,sans-serif;font-size:clamp(43px,5.5
 <div class="form-grid">
 <div class="field"><label for="name">Teljes név</label><input id="name" name="name" required placeholder="Hogy szólíthatunk?"></div>
 <div class="field"><label for="email">E-mail cím</label><input id="email" name="email" type="email" required placeholder="nev@email.hu"></div>
-<div class="field full"><label for="course">Melyik képzés érdekel?</label><select id="course" name="course"><option>Pénzügyi alapok</option><option>Befektetési iránytű</option><option>Tőzsde érthetően</option><option>Vállalkozói pénzügyek</option><option>Pénzügyi céltervezés</option><option>Digitális pénzügyek</option><option>Adózás érthetően</option><option>Digitális biztonság</option><option>Külföldi ügyintézés</option><option>Havi költségvetés</option><option>Megtakarítás és pénzügyi célok</option><option>Hitelek és hitelkártyák</option><option>Lakásbérlés és az önálló élet pénzügyei</option><option>Általános érdeklődés</option></select></div>
+<div class="field full"><label for="course">Melyik képzés érdekel?</label><select id="course" name="course"><option>Pénzügyi alapok – ingyenes tanfolyam</option><option>Befektetési iránytű</option><option>Tőzsde érthetően</option><option>Vállalkozói pénzügyek</option><option>Pénzügyi céltervezés</option><option>Digitális pénzügyek</option><option>Adózás érthetően</option><option>Digitális biztonság</option><option>Külföldi ügyintézés</option><option>Havi költségvetés</option><option>Megtakarítás és pénzügyi célok</option><option>Hitelek és hitelkártyák</option><option>Lakásbérlés és az önálló élet pénzügyei</option><option>Általános érdeklődés</option></select></div>
 <div class="field full"><label for="message">Üzenet</label><textarea id="message" name="message" placeholder="Írd meg, miben segíthetünk..."></textarea></div>
 </div>
 <button class="btn" type="submit" id="submitBtn">Jelentkezés elküldése&nbsp; ↗</button>
